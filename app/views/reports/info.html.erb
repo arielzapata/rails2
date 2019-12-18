@@ -1,0 +1,99 @@
+<div class="reports-container">  
+  <section class="header">
+    <%= image_tag("report/home.png", class: "home")%>
+    <div class="figures">    
+      <%= image_tag("report/arrow.png", class: "image1")%>
+      <%= image_tag("report/homie.png", class: "image2")%>
+    <%= image_tag("report/avatar.png", class: "image3")%>  
+  </div>
+    <div class="tenant-report">
+      <p class="subject">Reporte de inquilino</p>
+      <p class="dates">Fecha: julio 16 2019 Valido hasta octubre 16 2019. </p>
+      <p class="rank">
+        Calculado con Homie Technology que tiene un rango de 0 a 1500
+      </p>
+  </div>
+  </section>  
+<section class= "main" >
+  <section class="info-left">
+    <div class="qualification">
+      <div class="circle">
+        <%= image_tag("report/circle.png", class: "image")%>
+        <div class="centered">
+          1052
+        </div>
+      </div>      
+      <p class="range">0 1500</p>
+      <%= image_tag("report/bar.png", class: "bar")%>
+      <p class="colors-value">Malo Medio Bueno Excelente</p>
+      <p class="score"><span>Este puntaje es Bueno</span></p>
+      <p class="info-score">Rango superior al 43% de los inquilínos de México</p>
+    </div> 
+    <div class="user-status">
+      <p>Identificación otorgada: <span>Verificada</span></p>
+      <p>Nivel socioeconómico: <span>NA</span></p>
+      <p>Listas negras: <span>No</span></p>
+      <p>Prevención de lavado de dinero: <span>No disponible</span></p>
+      <p>Redes sociales vinculadas: <span>Ninguna</span></p>
+    </div>
+  </section>
+  <section class="info-right">
+    <div class="profile">
+      <div class="image-profile">
+        <%= image_tag("report/avatar.png", class: "avatar")%> 
+      </div>
+      <div class= "info-profile">
+        <p class="user-name">Esteban Manuel López Ramírez</p>
+        <p class="address" >centro, 123, piso 12, Depa 123, Centro, Yucatán:</p>
+        <p class="price">$44,000.00</p>
+      </div>
+    </div>
+    <div class="info">
+      <div class="feature">
+        <%= image_tag("report/job.png", class: "icon")%>
+        <p class="description"><span>/Empleo</span></p>
+      </div>
+      <div class="feature">
+        <%= image_tag("report/especiality.png", class: "icon")%>
+        <p class="description">/Especialidad-o-diplomado/<span>UTM</span></p>
+      </div>
+      <div class="feature">
+        <%= image_tag("report/money.png", class: "icon")%>
+        <p class="description">Ingresos verificados:<span>No disponible</span></p>
+      </div>
+      <div class="feature">
+        <%= image_tag("report/mail.png", class: "icon")%>
+        <p class="description"><span>dev+victor126inquilino@homie.mx</span></p>
+      </div>
+      <div class="feature">
+        <%= image_tag("report/phone.png", class: "icon")%>
+        <p class="description"><span>9992023842</span></p>
+      </div>
+      <div class="reference">
+        <%= image_tag("report/reference.png", class: "icon-reference")%>
+        <p class="description">Referencia: <span>Lorena Esther Manzanero</span> </p>
+        <p><span>Rodríguez</span></p>
+        <p>centro, 123, Centro, Yucatan, CP 97000</p>
+      </div>
+      <div class="reference">
+        <%= image_tag("report/reference.png", class: "icon-reference")%>
+        <p class="description">Referencia: <span>Catalina Esmeralda  Estrada</span></p>
+        <p><span>Castro</span></p>
+        <p>centro, 123, Petrolera, Veracruz, CP 96500</p>
+      </div>
+      <div class="reference">
+        <%= image_tag("report/reference.png", class: "icon-reference-last")%>
+        <p class="description">Referencia: <span>Luis Manuel Castillo López</span></p> 
+        <p>centro, 123, Centro, Yucatán, CP 97000</p>
+      </div>
+    </div>
+  </section>
+</section>
+<div class="footer">
+  <p>Nuestra tecnología, nos permite rentar tu inmueble al <span>mejor
+  inquilino</span>, sin <span>ningún riesgo</span> y en <span>tiempo record</span>.</p>
+  <%= image_tag("report/homie_banner.png", class: "banner")%>    
+</div>
+  <%= button_tag 'Guardar', type: 'button', class:"fa fa-download"  %> 
+</div>
+<%= stylesheet_link_tag("reports") %>

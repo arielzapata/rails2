@@ -1,0 +1,498 @@
+@mixin margin($left, $right, $top, $bottom) {
+  margin-left: $left;
+  margin-right: $right;
+  margin-top: $top;
+  margin-left: $bottom;
+}
+@media (max-width: 375px) {
+  .reports-container {
+    display: flex;
+    flex-direction: column; 
+    border: solid 1px #E4E1D3;  
+    .figures {
+      display: flex;
+      text-align: center;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top:0px;
+      border-bottom: solid 2px #E4E1D3;
+      height: 25px; 
+      @include margin(0px, 0px, 0px, 0px)
+    }
+    .home {
+      display:none
+    }
+    .subject {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .dates {
+      width: 400px;
+      margin-left: -50px;
+      color:rgb(133, 133, 125);
+    }
+    .rank {
+      margin-top: -11px;
+      color:rgb(133, 133, 125);
+    }
+    .image2 {
+      margin-left: 81px;
+      margin-right: 81px;    
+      margin-top: -15px;
+      height: 45px;    
+    }
+    .image3 {
+      width:25px
+    }
+    div {
+      background-color: white;
+      margin: 18px;
+      margin-top:-7px;
+      padding: 20px;
+      font-size: 14px;
+      border: solid 1px #E4E1D3;    
+    }    
+    .tenant-report {     
+      text-align: center;
+      padding: 0px;
+      padding-left:10px;
+      padding-right: 10px;
+      font-weight:200px;
+      color: #333333;
+      font-size:12px
+    }
+    .qualification {
+      text-align: center; 
+    }
+    .info-score{
+      width: 330px;
+      margin-left:-25px;
+      font-size:13px;
+      margin-bottom: -10px;
+    }
+    .circle {
+      position: relative;
+      text-align: center;
+      color: black;
+      border:none;        
+    }
+    .image{
+      width: 180px;
+      margin-bottom: -30px;
+    }  
+    .centered {
+      position: absolute;
+      top: -22px;
+      left: -55px;
+      transform: translate(100px, 100px);
+      border:none;
+      font-size: 30px;    
+    }
+    .range {
+      word-spacing: 120px;
+      margin-bottom: 0px;
+    }
+    .bar {
+      width: 178px;
+      height: 10px;    
+    }
+    .colors-value {
+      word-spacing: 10px;
+      font-size: 9px;
+      margin-left: 13px;
+    }
+    .user-status {
+      margin-top:-18px;
+      background-color: rgb(205, 215, 52);
+      border-top:none;
+    }
+    .profile{
+      margin-top: -15px;
+      display: flex;
+      flex-direction: row;  
+      padding: 0px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    .profile .image-profile{    
+      width: 1px;
+      margin-left: -10px;
+      margin-top: 15px;
+      background:none
+    }
+    .profile .info-profile {
+      background: none;
+      font-size: 12px;
+      margin-bottom: -20px;
+    }
+    .profile div {
+      border:none
+    }
+    .avatar {
+      width:50px;
+      margin-left:10px;
+    }
+    .info { 
+      margin-top:-15px;
+      height: 420px;   
+    }
+    .user-name{
+      font-size: 15px;
+      font-weight: bold;
+      margin-top:5px
+    }
+    .feature{
+      display: flex;
+      flex-direction: row;   
+      height: 10px;
+      padding: 10px;
+      font-size: 12px;
+      border: none;
+      margin-left: -5px;
+      margin-top:10px;
+      width: 400px;
+      background: none;
+      margin-top: 0px;
+    }
+    .reference{    
+      display: flex;
+      flex-direction: column;   
+      height: 10px;
+      padding: -40px;
+      font-size: 12px;
+      border: none;
+      margin-left: -30px;
+      margin-bottom: 35px;
+      background: none;
+      width: 400px;  
+    }
+    .reference p {  
+    margin:40px;
+    margin-top:-24px;
+    text-align: left;
+    line-height: 0px;
+    }
+    span {
+      font-weight: bold;
+      margin-left:0px
+    }
+    .icon{
+      width: 20px;
+      height: 20px;
+      margin-top: -8px;
+    }
+    .icon-reference {
+      width: 20px;
+      height: 20px;
+      margin-top: -8px;
+      margin-left: 10px;
+    }
+    .icon-reference-last {
+      width: 20px;
+      height: 20px;
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-bottom: 7px;
+      margin-top:-10px
+    }
+    .reference .icon {
+      margin-top: 4px;  
+    }  
+    .description {
+      margin-top: -5px;
+      margin-left: 12px;
+    }
+    .footer {
+      text-align: center;  
+      font-size: 12px;
+    }
+    .banner {
+      width: 130px;    
+    }
+    button{
+      width: 90px;
+      margin-left: 15px;
+      margin-top:-15px;
+      text-align: center;
+      font-size: 12px;
+      height: 30px;  
+    }
+  }
+}
+@media (min-width: 376px) {
+  body {
+    margin:300px;
+    margin-top: 10px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #E4E1D3;
+    height: 150px;    
+    align-items: center;
+  }
+  .subject {
+    margin-top:10px;  
+    margin-bottom: 28px;
+    font-size: 36px;
+    color: #333333
+  }
+  .dates {
+    margin-top:-22px;
+    font-size: 12px;
+  }
+  .info-left {
+    margin-top: 15px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    width:400px
+  }
+  .info-right { 
+    margin-top: 21px;
+    margin-right: -20px;
+    margin-left:-25px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  .home {
+    width: 80px;
+    height: 80px;
+    margin-left: 80px;
+    margin-right: 10px;
+  }
+  .reports-container {
+    display: flex;
+    flex-direction: column; 
+    width: 750px;
+      .figures{
+        display: none; 
+      }
+      .image2 {
+        margin-left: 81px;
+        margin-right: 81px;    
+        margin-top: -15px;
+        height: 45px;    
+      }
+      .image3 {
+        width:25px
+      }
+      div {
+        background-color: white;
+        margin: 18px;
+        margin-top:-7px;
+        padding: 20px;
+        font-size: 14px;
+        border: solid 1px #E4E1D3;    
+      }    
+      .tenant-report{     
+        text-align: left;
+        padding: 0px;
+        padding-left:10px;
+        padding-right: 10px;
+        font-weight:200px;
+        color: #333333;
+        font-size:12px;
+        width:400px;
+        margin-top:30px;
+        margin-left:2px;
+        border:none;
+      .dates{
+        margin-bottom: -10px;
+      }   
+      .dates{
+        color:rgb(133, 133, 125);
+        font-size: 12px;
+      }
+      .rank{
+      color:rgb(133, 133, 125);
+      font-size: 12px;
+      }
+    }
+    .qualification {
+      text-align: center; 
+      height: 240px;
+    }
+    .info-score{
+      font-size:10px;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-top:-10px;
+      padding-top: 7px;
+    }
+    .score{    
+      font-size: 12px;
+    }
+    .circle {
+      position: relative;
+      text-align: center;
+      color: black;
+      border:none;  
+      margin-top:-20px  
+    }
+    .image {
+      width: 155px;
+      margin-bottom: -35px;
+    }  
+    .centered {
+      position: absolute;
+      top: -30px;
+      left: -70px;
+      transform: translate(100px, 100px);
+      border:none;
+      font-size: 30px;    
+    }
+    .range{
+      word-spacing: 160px;
+      margin-bottom: -5px;
+      margin-top:-3px
+    }
+    .bar{
+      width: 210px;
+      height: 7px;         
+    }
+    .colors-value{
+      word-spacing: 20px;
+      font-size: 9px;
+      margin-left: 13px;
+      margin-top:0px
+    }
+    .user-status{
+      margin-top:-18px;
+      background-color: rgb(205, 215, 52);
+      border-top:none;
+      height: 353px;
+      font-size: 11px;
+      line-height: 25px;
+      padding-left: 10px;
+      padding-right: 0px;
+    }
+    .profile{
+      margin-top: -13px;
+      display: flex;
+      flex-direction: column;  
+      padding: 0px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 240px;
+    }
+    .profile .image-profile{    
+      width: 1px;
+      margin-left: -10px;
+      margin-top: 15px;
+      background:none
+      }
+    .profile .info-profile {
+      background: none;
+      font-size: 14px;
+      margin-bottom: 0px;
+      text-align: center;
+      line-height: 5px;
+      line-height: 5px;
+    }
+    .user-name{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .price {
+      padding-top:7px;
+      color:rgb(133, 133, 125)
+    }
+    .profile div {
+      border:none
+    }
+    .avatar {
+      width:100px;
+      margin-top: -10px;
+      margin-bottom: -60px;
+      margin-left: -40px;
+    }
+    .info{ margin-top: -15px;
+      height: 380px;
+    }
+    .address{
+      color:rgb(133, 133, 125)
+    }
+  .feature{
+      display: flex;
+      flex-direction: row;   
+      height: 10px;
+      padding: 5px;
+      font-size: 12px;
+      border: none;
+      margin-left: -5px;
+      margin-top:10px; 
+    }
+    .reference{
+      display: flex;
+      flex-direction: column;   
+      height: 10px;
+      padding: -40px;
+      font-size: 12px;
+      border: none;
+      margin-left: -30px;
+      margin-bottom: 25px;
+      background: none;     
+    }
+    .reference p{  
+    margin:40px;
+    margin-top:-24px;
+    text-align: left;
+    line-height: 0px;  
+    }
+    span{
+      font-weight: bold;
+      margin-left:0px
+    }
+    .icon{
+      width: 20px;
+      height: 20px;
+      margin-top: -8px;
+    }
+    .icon-reference {
+      width: 20px;
+      height: 20px;
+      margin-top: -8px;
+      margin-left: 10px;
+    }
+    .icon-reference-last{
+      width: 20px;
+      height: 20px;
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-bottom: 7px;
+      margin-top:-10px
+    }
+    .reference .icon{  
+      margin-top: 4px;  
+    } 
+    .description{
+      margin-top: -5px;
+      margin-left: 12px;
+    }
+    .footer{
+      text-align: center;  
+      font-size: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .banner {
+      width: 130px;  
+    }
+    button{
+      width: 90px;
+      margin-left: 0px;
+      margin-top:-15px;
+      text-align: center;
+      font-size: 12px;
+      height: 30px;   
+    }
+  }
+}
