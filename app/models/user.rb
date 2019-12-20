@@ -1,4 +1,4 @@
-class User
+class User 
   include Mongoid::Document
   field :email, type: String
   field :name, type: String
@@ -6,9 +6,11 @@ class User
   field :mobile_phone, type: String
   field :work_place, type: String
   
+  has_many :rents 
 
-  validates :email, presence:true
-  validates :last_name, presence:true
+  validates_presence_of :email
+  validates_presence_of :name
+  validates_presence_of :last_name
+  validates_presence_of :mobile_phone
+  validates_presence_of :work_place
 end
-
-
