@@ -1,0 +1,114 @@
+<style>
+.info-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.logo{
+  margin-bottom: 10px;
+}
+.info-container .title {  
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 17px;
+  width: 300px;
+  margin-top: -25px;
+}
+.info-container .info {
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 14px;
+  width: 650px;
+  line-height: 20px;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+.info-container .final-info {
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 14px;
+  width: 480px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+.line-two {
+  width: 590px;
+  text-align: center;
+  margin-left: -60px;
+  margin-top: -14px;
+}
+.btn-info {
+  width: 300px;
+  height: 39px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #8D7AFF;
+  margin-bottom: 20px;
+  border: 1px solid #8D7AFF;
+  background: white;
+}
+.image-row1 { 
+  letter-spacing: 15px ;
+  margin-bottom: 15px;
+}
+.line {
+  width: 800px;
+  text-align: center;
+  margin-left: -75px;
+  margin-top: -13px
+}
+</style>
+
+<div class="info-container">
+  <%= image_tag("mailer/logo.png")%>
+  <%= image_tag("mailer/banner.png")%>
+  <div class="title">
+    <p>
+      Hola Propietario Apellido,    
+    </p> 
+  </div>
+  <div class="info"> 
+    <p>
+      ¿Recuerdas el registro que iniciaste para poner en renta tu propiedad con nosotros?
+      <section class="line"> 
+        <a href="">Continúa el proceso</a>  y disfruta de todo lo que te ofrecemos. En Homie queremos que 
+        rentes tu
+      </section>
+      inmueble en el menor tiempo posible, por ello también publicamos tu anuncio en:    
+    </p>    
+  </div>    
+
+  <div class="image-row1">
+    <%= image_tag("mailer/mudi.png")%>
+    <%= image_tag("mailer/metros.png")%>
+  </div>
+   
+  <div class="image-row1">
+   <%= image_tag("mailer/inmuebles.png")%>
+   <%= image_tag("mailer/craigs.png")%>
+  </div>
+
+  <div class="image-row1">
+    <%= image_tag("mailer/go.png")%>
+    <%= image_tag("mailer/propiedades.png")%>
+    <%= image_tag("mailer/mercado.png")%>
+  </div>  
+  <div class="final-info">
+    <p>
+        así como en anuncios destacados dentro de Facebook y Google,
+        <section class="line-two">todo esto sin costo y sin pedirte exclusividad. ¡No dejes pasar la oportunidad!</section>          
+    </p>
+  </div>
+  <button class="btn-info">Continua tu registro ahora</button>
+</div>

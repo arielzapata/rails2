@@ -3,6 +3,10 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
+  def mail
+    UserMailer.new_mail(User.new(email: 'usuario@homie.com')).deliver
+  end
+
   def index
     @users = User.all
   end
@@ -10,6 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    UserMailer.new_mail(User.new(email: @user.email)).deliver
   end
 
   # GET /users/new
@@ -35,6 +40,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /users/1
